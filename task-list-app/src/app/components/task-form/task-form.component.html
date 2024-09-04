@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="card text-bg-light mb-3" style="max-width: 100%">
+        <div class="card-header">{{task.idTask ? 'Update task' : 'Insert task'}}</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-success" role="alert" *ngIf="success == true">
+                        Task registered successfully  
+                    </div>
+        
+                    <div class="alert alert-danger" role="alert" *ngFor="let error of errors">
+                        {{error.message}}   
+                    </div>
+                </div>
+            </div>
+            <form #taskForm="ngForm" (ngSubmit)="onSubmit()">             
+                <div class="row">
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Task id</label>
+                            <input type="text" class="form-control"
+                                [(ngModel)]="task.idTask" name="idTask" disabled="true"/>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Task name</label>
+                            <input type="text" class="form-control"
+                                [(ngModel)]="task.descTask" name="descTask"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Date Init</label>
+                            <input type="date" class="form-control"
+                            [(ngModel)] = "task.dataInit" name="dataInit"/>
+                        </div>  
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Date Close</label>
+                            <input type="date" class="form-control"
+                            [(ngModel)] = "task.dataClose" name="dataClose"/>
+                        </div> 
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label  class="form-label">Status</label>
+                            <select class="form-select" aria-label="Default select example"
+                            [(ngModel)] = "task.status" name="status">
+                                <option value="ABERTA">Open</option>
+                                <option value="CONCLUIDA">Completed</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>           
+                <div class="row">
+                    <div class="col-6">
+                            <button type="submit" class="btn btn-success" style="margin-right: 3px;" *ngIf="!task.idTask">
+                                Save
+                            </button>
+
+                            <button type="submit" class="btn btn-success" style="margin-right: 3px;" *ngIf="task.idTask">
+                                Update
+                            </button>
+
+                            <button (click)="voltarParaListagem()" type="button" class="btn btn-danger" style="margin-right: 3px;">
+                                Cancel
+                            </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
