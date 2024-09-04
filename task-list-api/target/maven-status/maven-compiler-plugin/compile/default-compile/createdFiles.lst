@@ -1,0 +1,15 @@
+br\com\tasklist\config\SpringDocApiConfig.class
+br\com\tasklist\config\SpringTimezoneConfig.class
+br\com\tasklist\services\exception\DatabaseException.class
+br\com\tasklist\entity\dto\TaskDTO.class
+br\com\tasklist\controller\FieldMessage.class
+br\com\tasklist\controller\ResourceExceptionHandler.class
+br\com\tasklist\services\TaskService.class
+br\com\tasklist\TasklistApplication.class
+br\com\tasklist\controller\StandardError.class
+br\com\tasklist\controller\TaskController.class
+br\com\tasklist\entity\Task.class
+br\com\tasklist\controller\ValidationError.class
+br\com\tasklist\repository\TaskRepositoy.class
+br\com\tasklist\entity\enums\Status.class
+br\com\tasklist\services\exception\ResourceNotFoundException.class

@@ -1,0 +1,15 @@
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\services\TaskService.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\config\SpringTimezoneConfig.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\controller\ResourceExceptionHandler.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\controller\ValidationError.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\services\exception\DatabaseException.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\controller\FieldMessage.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\controller\TaskController.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\entity\enums\Status.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\config\SpringDocApiConfig.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\controller\StandardError.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\repository\TaskRepositoy.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\entity\Task.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\services\exception\ResourceNotFoundException.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\TasklistApplication.java
+C:\workspace-pessoal\Task List\task-list-api\src\main\java\br\com\tasklist\entity\dto\TaskDTO.java
