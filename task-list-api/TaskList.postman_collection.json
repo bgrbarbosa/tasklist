@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "47f22216-3202-4806-9b34-8535404486da",
+		"name": "TaskList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16803873"
+	},
+	"item": [
+		{
+			"name": "FindAllTasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8082/task"
+			},
+			"response": []
+		},
+		{
+			"name": "Documentation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8082/tasks-list.html"
+			},
+			"response": []
+		},
+		{
+			"name": "FindById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8082/task/2"
+			},
+			"response": []
+		},
+		{
+			"name": "FindByStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8082/task/status/CONCLUIDA"
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Tast",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"descTask\": \"\",\r\n        \"dataInit\": \"2024-05-05\",\r\n        \"dataClose\": \"2024-05-05\",\r\n        \"status\": \"ABERTA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8082/task"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"idTask\": 8,\r\n        \"descTask\": alterado,\r\n        \"dataInit\": null,\r\n        \"dataClose\": null,\r\n        \"status\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8082/task/8"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8082/task/15"
+			},
+			"response": []
+		}
+	]
+}
